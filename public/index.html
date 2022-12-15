@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Upload File</h3>
+            <div class="drop_box">
+                <header>
+                    <h4>Select File here</h4>
+                </header>
+                <p>Files Supported: jpeg, png, svg</p>
+                <form method="POST" action="/getDestinationName" enctype="multipart/form-data">
+                    <div>
+                        <label>Upload picture</label>
+                        <input type="file" name="destinationPicture" accept=".jpeg,.png,.svg," required />
+                    </div>
+                    <br>
+                    <div>
+                        <input class="btn" type="submit" value="Upload" />
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
